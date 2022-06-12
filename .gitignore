@@ -1,13 +1,5 @@
 
 cmake-build-debug/*
-cores/*
-libraries/*
-stm32f103/*
-LatheCPP/*
-monitor/*
-MonitorCPP/*
-MonitorCPPN/*
-variants/*
 .idea/*
 .vs/*
 *.pyproj
