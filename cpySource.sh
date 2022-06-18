@@ -30,6 +30,35 @@ printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
 /cygdrive/c/Development/Arduino/monitor/.pio/libdeps/stm32f103/Time \
 /cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103/Time
 
+mkdir -p /cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/DS3232RTC/src
+tmp=("DS3232RTC.cpp" )
+printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
+/cygdrive/c/Development/Arduino/monitor/.pio/libdeps/stm32f103N/DS3232RTC/src \
+/cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/DS3232RTC/src
+
+mkdir -p /cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/DallasTemperature
+tmp=("DallasTemperature.cpp" )
+printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
+/cygdrive/c/Development/Arduino/monitor/.pio/libdeps/stm32f103N/DallasTemperature \
+/cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/DallasTemperature
+
+mkdir -p /cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/LiquidCrystal_I2C/src
+tmp=("LiquidCrystal_I2C.cpp" )
+printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
+/cygdrive/c/Development/Arduino/monitor/.pio/libdeps/stm32f103N/LiquidCrystal_I2C/src \
+/cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/LiquidCrystal_I2C/src
+
+mkdir -p /cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/OneWire
+tmp=("OneWire.cpp" )
+printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
+/cygdrive/c/Development/Arduino/monitor/.pio/libdeps/stm32f103N/OneWire \
+/cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/OneWire
+
+mkdir -p /cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/Time
+tmp=("DateStrings.cpp" "Time.cpp" )
+printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
+/cygdrive/c/Development/Arduino/monitor/.pio/libdeps/stm32f103N/Time \
+/cygdrive/c/Development/EclipseCPP/MonitorCLion/stm32f103N/Time
 mkdir -p /cygdrive/c/Development/EclipseCPP/MonitorCLion/monitor/src
 tmp=("CRC32.cpp" "DHT.cpp" "dns.cpp" "getSP.S" "max31856.cpp" "max31865.cpp" "monitor.cpp" "ntp.cpp" "timer3.cpp" "wifi.cpp" )
 printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
@@ -185,3 +214,9 @@ tmp=("PeripheralPins.c" "PeripheralPins_MALYANM200_F103CB.c" "generic_clock.c" "
 printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
 /cygdrive/c/users/eric/.platformio/packages/framework-arduinoststm32/variants/STM32F1xx/F103C8T_F103CB\(T-U\) \
 /cygdrive/c/Development/EclipseCPP/MonitorCLion/variants/STM32F1xx/F103C8T_F103CB\(T-U\)
+
+mkdir -p /cygdrive/c/Development/EclipseCPP/MonitorCLion/variants/STM32F1xx/F103R\(8-B\)T
+tmp=("PeripheralPins.c" "generic_clock.c" "variant_BLUEBUTTON_F103RxT.cpp" "variant_NUCLEO_F103RB.cpp" "variant_generic.cpp" )
+printf "%s\n" "${tmp[@]}" | rsync -vv -a --files-from=- \
+/cygdrive/c/users/eric/.platformio/packages/framework-arduinoststm32/variants/STM32F1xx/F103R\(8-B\)T \
+/cygdrive/c/Development/EclipseCPP/MonitorCLion/variants/STM32F1xx/F103R\(8-B\)T
