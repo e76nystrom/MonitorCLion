@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.22)
 
-file(GLOB_RECURSE SOURCES *.c *.cpp
+file(GLOB_RECURSE SOURCES *.c *.cpp *.S
 cores/arduino/*.c
 cores/arduino/*.cpp
 cores/arduino/avr/*.c
 cores/arduino/stm32/*.*
+cores/arduino/stm32/*.S
 cores/arduino/stm32/OpenAMP/*.c
 cores/arduino/stm32/OpenAMP/libmetal/*.c
 cores/arduino/stm32/OpenAMP/libmetal/generic/*.c
